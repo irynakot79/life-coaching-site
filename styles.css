@@ -1,0 +1,145 @@
+/* Base styles and variables */
+:root {
+    --background: #F7F3EC;
+    --text: #262322;
+    --accent: #B98268;
+    --accent-secondary: #A7B8A1;
+    --section-background: #E8DDD0;
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--font-heading);
+    color: var(--text);
+    margin-bottom: 0.5em;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+}
+
+header.hero {
+    background-color: var(--section-background);
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    max-width: 800px;
+    margin: 0 auto 1.5rem auto;
+    font-size: 1.1rem;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: var(--accent);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--text);
+}
+
+main {
+    padding: 2rem 1rem;
+}
+
+.content-section {
+    margin-bottom: 3rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.content-section h3 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact {
+    background-color: var(--section-background);
+    padding: 2rem;
+    border-radius: 4px;
+}
+
+.contact p {
+    margin-bottom: 1rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.75rem;
+    border: 1px solid var(--accent-secondary);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    margin-top: 1.5rem;
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--section-background);
+    font-size: 0.9rem;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+}
