@@ -37,8 +37,8 @@ h1,h2,h3{font-family:'Playfair Display',serif;font-weight:500}
 .entry-grid article{background:var(--surface);border:1px solid var(--border);padding:1rem}
 
 .archive-head h1{font-size:clamp(2rem,4vw,3rem);margin-bottom:.6rem}
-.chips{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1rem}
-.chip{font-size:.85rem;text-decoration:none;color:var(--muted);padding:.32rem .7rem;border:1px solid var(--border);border-radius:999px;background:var(--surface-light)}
+.chip-row{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1rem}
+.chip{font-size:.85rem;color:var(--muted);padding:.32rem .7rem;border:1px solid var(--border);border-radius:999px;background:var(--surface-light)}
 
 .archive-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:.9rem}
 .archive-card{background:var(--surface-light);border:1px solid var(--border);padding:1rem;box-shadow:0 8px 20px rgba(82,78,72,.06)}
@@ -52,3 +52,9 @@ footer{text-align:center;color:var(--muted);padding:1rem;font-size:.9rem}
 @media (max-width:860px){
   .hero{grid-template-columns:1fr;gap:1.2rem}
 }
+
+.card-label{font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:.3rem}
+.card-meta{font-size:.84rem;color:#5e5b57;margin-bottom:.5rem}
+.card-action{font-size:.9rem;color:var(--muted);margin-top:.5rem}
+.card-action-link{font-size:.92rem;color:var(--text);text-decoration:none;border-bottom:1px solid var(--border)}
+.ethics-note p{font-size:.95rem;color:#4d4a46}
