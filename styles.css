@@ -58,3 +58,10 @@ footer{text-align:center;color:var(--muted);padding:1rem;font-size:.9rem}
 .card-action{font-size:.9rem;color:var(--muted);margin-top:.5rem}
 .card-action-link{font-size:.92rem;color:var(--text);text-decoration:none;border-bottom:1px solid var(--border)}
 .ethics-note p{font-size:.95rem;color:#4d4a46}
+
+.nav-link{}
+.archive-intro{margin-top:.35rem}
+.entry-card{}
+.agent-hero ul{margin-top:.7rem;margin-left:1.1rem}
+.agent-shell{max-width:760px}
+.agent-status{margin-bottom:.9rem;color:#4f4b47}
