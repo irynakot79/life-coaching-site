@@ -32,3 +32,8 @@ GitHub Pages is static and not a media streaming backend. External video hosts p
 ## Why API keys and AI backends must not be in browser code
 Client-side code is public. API keys must never be exposed in static HTML/JS.
 For a real AI guide, use a secure backend or approved third-party widget with server-side key management.
+
+## How to add a new garden area later
+1. Add a new area card to `garden.html`.
+2. Add corresponding category chips/cards to `archive.html`.
+3. If needed, create a new page in `works/` and link it from archive cards.
