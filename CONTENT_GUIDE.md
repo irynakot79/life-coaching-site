@@ -10,6 +10,11 @@ To publish new materials, add or edit HTML files and update `archive.html` links
 3. Add title, preface, and body text.
 4. Add or update a card in `archive.html` linking to this page.
 
+## How to add a letter
+1. Create a new letter page in `works/` or publish as an archive note.
+2. Keep tone intimate, clear, and non-clinical.
+3. Update `archive.html` with category, theme, and action text.
+
 ## How to add a video reflection
 1. Create or update a page in `works/` with written preface and context.
 2. Host video externally first (YouTube, Vimeo, or approved host).
