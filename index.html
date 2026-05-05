@@ -3,18 +3,170 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Irina Kot — A Garden Where One Can Be</title>
-  <meta name="description" content="A garden of reflections, conversations, and quiet returns — for women finding their way back to themselves." />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <title>Irina's Garden — A place where you can be yourself</title>
+  <meta name="description" content="A quiet garden of notes, letters, and slow conversations — for women finding their way back to themselves." />
+  <link rel="canonical" href="https://irynakot79.github.io/life-coaching-site/" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <meta property="og:title" content="Irina's Garden — A place where you can be yourself" />
+  <meta property="og:description" content="A quiet garden of notes, letters, and slow conversations." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/irina-photo.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://picsum.photos" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500&family=Cormorant+Garamond:ital,wght@1,400;1,500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <script src="scripts/site.js" defer></script>
 </head>
 <body>
-<header class="site-nav-wrap"><nav class="site-nav" aria-label="Primary navigation"><a href="index.html" aria-current="page">Home</a><a href="garden.html">Garden</a><a href="archive.html">Archive</a><a href="agent.html">Quiet Guide</a><a href="#contact">Contact</a></nav></header>
-<main class="container">
-<section class="hero"><figure class="hero-image-card"><img src="images/irina-photo.jpg" alt="Irina Kot portrait" class="hero-image"/></figure><div class="hero-copy"><p class="identity">Irina Kot</p><h1>Let yourself be.<br>Say yes to yourself.</h1><p class="subtitle">A garden of reflections, conversations, and quiet returns — for women finding their way back to themselves.</p><p>This is a warm reflective garden: a quiet, living space where one can pause, listen, and return to what is one’s own.</p><div class="actions"><a href="garden.html" class="btn">Enter the garden</a><a href="archive.html" class="btn btn-soft">Enter the archive</a><a href="agent.html" class="btn btn-soft">Meet the quiet guide</a><a href="mailto:irynakot2016@gmail.com?subject=Garden%20inquiry" class="btn btn-soft">Send a note</a></div></div></section>
-<section class="section-card"><h2>Ways to enter this garden</h2><div class="entry-grid"><article class="entry-card"><h3>Fountain</h3><p>Short public reflections, small notes, and fragments of thought.</p></article><article class="entry-card"><h3>Fire Circle</h3><p>Live conversations, shared questions, and warm collective formats.</p></article><article class="entry-card"><h3>Ocean Gazebo</h3><p>Deeper reflections on belonging, migration, desire, loss, and home.</p></article><article class="entry-card"><h3>Poolside Conversations</h3><p>Video reflections and spoken materials with written context.</p></article><article class="entry-card"><h3>Summer Kitchen</h3><p>Letters, practical notes, and questions being prepared slowly.</p></article><article class="entry-card"><h3>Sunset Terrace</h3><p>Life transitions, rupture, identity shifts, and thresholds.</p></article><article class="entry-card"><h3>Under the Stars</h3><p>Quiet archive pieces for inward evening reflection.</p></article><article class="entry-card"><h3>Quiet Guide</h3><p>A future digital guide for orientation in themes, archive notes, and first questions. <strong>Being prepared.</strong></p></article></div></section>
-<section class="section-card ethics"><h2>Ethics</h2><p>Private work remains private. Public reflections are general and educational. They are not psychotherapy, diagnosis, or crisis care. Personal stories are never published without explicit consent, and identifying details are not used.</p></section>
-<section id="contact" class="section-card contact"><h2>Contact</h2><p>If you feel that this garden speaks to you, you are welcome to send a short note.</p><a href="mailto:irynakot2016@gmail.com?subject=Garden%20inquiry" class="btn">Send a note</a></section>
-</main>
-<footer>© 2026 Irina Kot — A Garden Where One Can Be</footer>
-</body></html>
+  <a href="#main" class="skip-link" data-en="Skip to content" data-ru="Перейти к содержанию">Skip to content</a>
+  <header class="site-nav-wrap">
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="index.html" aria-current="page" data-en="Home" data-ru="Главная">Home</a>
+      <a href="garden.html" data-en="Garden" data-ru="Сад">Garden</a>
+      <a href="archive.html" data-en="Archive" data-ru="Архив">Archive</a>
+      <a href="agent.html" data-en="Quiet Guide" data-ru="Тихий проводник">Quiet Guide</a>
+      <a href="#contact" data-en="Contact" data-ru="Контакт">Contact</a>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" class="lang-toggle" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" class="lang-toggle" data-lang="ru" aria-pressed="false">RU</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="container">
+
+    <!-- Wordmark hero -->
+    <section class="wordmark-hero">
+      <div class="wordmark-ornament" aria-hidden="true">
+        <svg viewBox="0 0 120 120">
+          <!-- Garden arch with two leaves -->
+          <path d="M30 100 V60 Q60 30 90 60 V100" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M60 62 Q54 48 40 46 Q48 56 60 62" fill="#b8935a" opacity=".85"/>
+          <path d="M60 62 Q66 48 80 46 Q72 56 60 62" fill="#b8935a" opacity=".85"/>
+          <circle cx="60" cy="58" r="2" fill="currentColor"/>
+          <line x1="15" y1="105" x2="105" y2="105" stroke="#b8935a" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <h1 class="wordmark-title" data-en="Irina's Garden" data-ru="Сад Ирины">Irina's Garden</h1>
+      <p class="wordmark-tagline" data-en="A place where you can be yourself" data-ru="Место, где можно быть собой">A place where you can be yourself</p>
+      <a href="#offerings" class="wordmark-cta">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M14 3l7 7-7 7M21 10H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span data-en="Enter the garden" data-ru="Войти в сад">Enter the garden</span>
+      </a>
+      <p class="hero-quote" data-en="&ldquo;Sometimes it is enough just to know the garden is there.&rdquo;" data-ru="«Иногда важно просто знать, что сад есть».">&ldquo;Sometimes it is enough just to know the garden is there.&rdquo;</p>
+    </section>
+
+    <!-- Testimonials carousel -->
+    <section class="testimonials carousel" aria-label="Testimonials">
+      <div class="testimonials-track">
+        <figure class="slide is-active">
+          <blockquote class="slide-quote" data-en="&ldquo;It struck me quietly. I did not expect answers to go this deep.&rdquo;" data-ru="«В восторге, не ожидала, что будут такие глубокие ответы».">&ldquo;It struck me quietly. I did not expect answers to go this deep.&rdquo;</blockquote>
+          <figcaption class="slide-meta" data-en="— March 2026" data-ru="— март 2026 г.">— March 2026</figcaption>
+        </figure>
+        <figure class="slide">
+          <blockquote class="slide-quote" data-en="&ldquo;Goosebumps. It was powerful without being loud.&rdquo;" data-ru="«До мурашек, это было сильно».">&ldquo;Goosebumps. It was powerful without being loud.&rdquo;</blockquote>
+          <figcaption class="slide-meta" data-en="— March 2026" data-ru="— март 2026 г.">— March 2026</figcaption>
+        </figure>
+        <figure class="slide">
+          <blockquote class="slide-quote" data-en="&ldquo;I came in tired. I left lighter — and with my own voice, somehow.&rdquo;" data-ru="«Пришла уставшей. Ушла легче — и со своим голосом, как будто заново».">&ldquo;I came in tired. I left lighter — and with my own voice, somehow.&rdquo;</blockquote>
+          <figcaption class="slide-meta" data-en="— February 2026" data-ru="— февраль 2026 г.">— February 2026</figcaption>
+        </figure>
+      </div>
+      <div class="carousel-dots" role="tablist" aria-label="Testimonial slides">
+        <button type="button" class="dot is-active" aria-label="Slide 1"></button>
+        <button type="button" class="dot" aria-label="Slide 2"></button>
+        <button type="button" class="dot" aria-label="Slide 3"></button>
+      </div>
+    </section>
+
+    <!-- Offerings -->
+    <section id="offerings" class="offerings-wrap">
+      <header class="offerings-title">
+        <h2 data-en="What grows here" data-ru="Что растёт в саду">What grows here</h2>
+        <div class="gold-line" aria-hidden="true"></div>
+        <p data-en="Three quiet places to share a little slow time. Walk into the one that calls you today." data-ru="Три тихих места, где можно побыть медленным временем вместе. Войди в то, что сегодня зовёт.">Three quiet places to share a little slow time. Walk into the one that calls you today.</p>
+      </header>
+
+      <div class="offerings">
+
+        <article class="offering">
+          <div class="offering-image">
+            <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=900&q=70&auto=format&fit=crop" alt="" loading="lazy" decoding="async" />
+            <h3 class="offering-title" data-en="Rose Garden" data-ru="Розовый сад">Rose Garden</h3>
+          </div>
+          <div class="offering-body">
+            <p class="offering-intro" data-en="A quiet conversation, just between us. For days when you are carrying more than you can name." data-ru="Тихая беседа — только наша. Для дней, когда несёшь больше, чем умеешь назвать.">A quiet conversation, just between us. For days when you are carrying more than you can name.</p>
+            <ul class="offering-list">
+              <li data-en="A slow hour, with room to breathe between sentences" data-ru="Медленный час, в котором есть место дышать между фразами">A slow hour, with room to breathe between sentences</li>
+              <li data-en="A place to set things down and look at them gently" data-ru="Место, где можно отложить что-то рядом и посмотреть на это мягче">A place to set things down and look at them gently</li>
+              <li data-en="Time to listen for your own voice — the quieter one" data-ru="Время услышать свой голос — тот, что потише">Time to listen for your own voice — the quieter one</li>
+              <li data-en="Online, 60 minutes, in English or Russian" data-ru="Онлайн, 60 минут, на английском или русском">Online, 60 minutes, in English or Russian</li>
+            </ul>
+            <a class="price-pill" href="mailto:irynakot2016@gmail.com?subject=Rose%20Garden%20session" data-en="$95 · private conversation" data-ru="$95 · частная беседа">$95 · private conversation</a>
+          </div>
+        </article>
+
+        <article class="offering">
+          <div class="offering-image">
+            <img src="https://images.unsplash.com/photo-1475139441338-693e7dbe20b6?w=900&q=70&auto=format&fit=crop" alt="" loading="lazy" decoding="async" />
+            <h3 class="offering-title" data-en="Quiet Garden Circle" data-ru="Тихий садовый круг">Quiet Garden Circle</h3>
+          </div>
+          <div class="offering-body">
+            <p class="offering-intro" data-en="A small circle, once a month. A few women, a candle, the same questions we all carry." data-ru="Небольшой круг — раз в месяц. Несколько женщин, свеча, те же вопросы, что несём мы все.">A small circle, once a month. A few women, a candle, the same questions we all carry.</p>
+            <ul class="offering-list">
+              <li data-en="One evening a month, eight women, a closed circle" data-ru="Один вечер в месяц, восемь женщин, закрытый круг">One evening a month, eight women, a closed circle</li>
+              <li data-en="One quiet theme each time — home, love, coming back to yourself" data-ru="Одна тихая тема за раз — дом, любовь, возвращение к себе">One quiet theme each time — home, love, coming back to yourself</li>
+              <li data-en="A warm chat between meetings, only for the circle" data-ru="Тёплая переписка между встречами — только для круга">A warm chat between meetings, only for the circle</li>
+              <li data-en="A place where no one is asked to be stronger than they are" data-ru="Место, где никого не просят быть сильнее, чем она есть">A place where no one is asked to be stronger than they are</li>
+            </ul>
+            <a class="price-pill is-gold" href="mailto:irynakot2016@gmail.com?subject=Quiet%20Garden%20Circle%20waitlist" data-en="$29 / month · join the circle" data-ru="$29 / месяц · в круг">$29 / month · join the circle</a>
+          </div>
+        </article>
+
+        <article class="offering">
+          <div class="offering-image">
+            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=900&q=70&auto=format&fit=crop" alt="" loading="lazy" decoding="async" />
+            <h3 class="offering-title" data-en="Letters from the Kitchen" data-ru="Письма с кухни">Letters from the Kitchen</h3>
+          </div>
+          <div class="offering-body">
+            <p class="offering-intro" data-en="A letter back to you, written slowly. For when words on the page are easier than words out loud." data-ru="Письмо тебе в ответ, написанное медленно. Для дней, когда слова на бумаге ближе, чем вслух.">A letter back to you, written slowly. For when words on the page are easier than words out loud.</p>
+            <ul class="offering-list">
+              <li data-en="Write to me — in your words, at your length, however it comes" data-ru="Напиши мне — своими словами, какой угодно длины, как выйдет">Write to me — in your words, at your length, however it comes</li>
+              <li data-en="In a few days, a letter back. Not advice — something more like being kept company" data-ru="Через несколько дней — письмо в ответ. Не совет — скорее ощущение, что рядом кто-то есть">In a few days, a letter back. Not advice — something more like being kept company</li>
+              <li data-en="Private. Nothing of yours is ever shared" data-ru="Личное. Ничего твоего не уходит дальше этой переписки">Private. Nothing of yours is ever shared</li>
+              <li data-en="Good if you are across time zones — or simply prefer paper to voices" data-ru="Подходит, если ты в другом часовом поясе — или бумага тебе ближе, чем голоса">Good if you are across time zones — or simply prefer paper to voices</li>
+            </ul>
+            <a class="price-pill" href="mailto:irynakot2016@gmail.com?subject=Reflective%20Letter" data-en="$85 · reflective letter" data-ru="$85 · письмо-разбор">$85 · reflective letter</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Always near -->
+    <section id="contact" class="always-near" aria-label="Always near">
+      <div class="always-near-inner">
+        <h2 data-en="Always near" data-ru="Всегда рядом">Always near</h2>
+        <p data-en="If something here meets you — even quietly — send a line. It doesn't have to be polished. A few words are enough." data-ru="Если что-то здесь тихо встретилось с тобой — пришли строчку. Она не обязана быть складной. Пары слов довольно.">If something here meets you — even quietly — send a line. It doesn't have to be polished. A few words are enough.</p>
+        <a class="btn-cream" href="mailto:irynakot2016@gmail.com?subject=Hello%20Irina">
+          <svg viewBox="0 0 24 24" fill="none" width="18" height="18" aria-hidden="true">
+            <path d="M4 6h16v12H4z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          </svg>
+          <span data-en="Write to Irina" data-ru="Написать Ирине">Write to Irina</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="gold-line" aria-hidden="true"></div>
+    <span data-en="© 2026 Irina Kot — A quiet place to come back to yourself" data-ru="© 2026 Ирина Кот — Тихое место, чтобы вернуться к себе">© 2026 Irina Kot — A quiet place to come back to yourself</span>
+  </footer>
+</body>
+</html>

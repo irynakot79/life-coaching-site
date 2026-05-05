@@ -4,42 +4,58 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Quiet Guide — Irina Kot</title>
-  <meta name="description" content="A future digital guide for navigating reflections, themes, and first questions." />
+  <meta name="description" content="A small helper that will suggest a note, a letter, or a format that fits what you're sitting with." />
+  <link rel="canonical" href="https://irynakot79.github.io/life-coaching-site/agent.html" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <script src="scripts/site.js" defer></script>
 </head>
 <body>
+  <a href="#main" class="skip-link" data-en="Skip to content" data-ru="Перейти к содержанию">Skip to content</a>
   <header class="site-nav-wrap">
     <nav class="site-nav" aria-label="Primary navigation">
-      <a href="index.html">Home</a>
-      <a href="garden.html">Garden</a>
-      <a href="archive.html">Archive</a>
-      <a href="agent.html" aria-current="page">Quiet Guide</a>
-      <a href="index.html#contact">Contact</a>
+      <a href="index.html" data-en="Home" data-ru="Главная">Home</a>
+      <a href="garden.html" data-en="Garden" data-ru="Сад">Garden</a>
+      <a href="archive.html" data-en="Archive" data-ru="Архив">Archive</a>
+      <a href="agent.html" aria-current="page" data-en="Quiet Guide" data-ru="Тихий проводник">Quiet Guide</a>
+      <a href="index.html#contact" data-en="Contact" data-ru="Контакт">Contact</a>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" class="lang-toggle" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" class="lang-toggle" data-lang="ru" aria-pressed="false">RU</button>
+      </div>
     </nav>
   </header>
 
-  <main class="container">
+  <main id="main" class="container">
     <section class="section-card agent-hero">
-      <h1>Quiet Guide</h1>
-      <p>A future guide for the garden.
-      A quiet digital guide is being prepared to help visitors orient themselves inside the garden, find relevant themes, and begin with a gentle question.</p>
+      <h1 data-en="Quiet Guide" data-ru="Тихий проводник">Quiet Guide</h1>
+      <p data-en="A small helper, still being written." data-ru="Маленький помощник — он ещё пишется.">A small helper, still being written.</p>
+      <p data-en="The idea is simple. You say, in a few words, what you are carrying today. It points you to a note, a letter, or an evening that might fit. A small map, nothing more." data-ru="Идея простая. Ты говоришь несколькими словами, что несёшь сегодня. Он указывает на заметку, письмо или вечер, которые могут лечь рядом. Маленькая карта, не больше.">The idea is simple. You say, in a few words, what you are carrying today. It points you to a note, a letter, or an evening that might fit. A small map, nothing more.</p>
+      <h2 class="agent-subhead" data-en="What it will help you find" data-ru="С чем он поможет">What it will help you find</h2>
       <ul>
-        <li>finding a reflection in the archive</li>
-        <li>choosing between a reflective session, letter, group room, video, or live format</li>
-        <li>formulating a first question</li>
-        <li>navigating garden areas like Fountain, Fire Circle, Ocean Gazebo, Poolside Conversations, Summer Kitchen, Sunset Terrace, and Under the Stars, and themes like boundaries, fatigue, relationships, belonging, and return to self</li>
+        <li data-en="a note in the archive, when you don't yet know what you are looking for" data-ru="заметку в архиве — когда ещё не знаешь, что ищешь">a note in the archive, when you don't yet know what you are looking for</li>
+        <li data-en="a quiet way of being together — a letter, a circle, a conversation, a video, an evening" data-ru="тихий способ побыть рядом — письмо, круг, беседу, видео или вечер">a quiet way of being together — a letter, a circle, a conversation, a video, an evening</li>
+        <li data-en="a first question, when words are still far away" data-ru="первый вопрос — когда слова ещё далеко">a first question, when words are still far away</li>
       </ul>
     </section>
 
     <section class="section-card agent-shell" aria-label="Quiet Guide">
-      <p class="agent-status">The Quiet Guide is being prepared. For now, you are welcome to send a note directly.</p>
-      <a class="btn" href="mailto:irynakot2016@gmail.com?subject=Quiet%20Guide%20interest">Send a note</a>
+      <p class="agent-status" data-en="The Quiet Guide isn't finished yet. Until then, if you want to ask something, a few lines by letter are enough." data-ru="Тихий проводник ещё не готов. Пока что — если хочется о чём-то спросить, довольно пары строк письмом.">The Quiet Guide isn't finished yet. Until then, if you want to ask something, a few lines by letter are enough.</p>
+      <a class="btn" href="mailto:irynakot2016@gmail.com?subject=Hello%20from%20Quiet%20Guide" data-en="Write me" data-ru="Написать">Write me</a>
       <!-- AI_AGENT_WIDGET_AREA: paste approved third-party widget script or backend-connected embed here. Do not expose API keys in browser code. -->
     </section>
-    <section class="section-card ethics-note"><p>The Quiet Guide is not psychotherapy, diagnosis, crisis care, or a substitute for personal work with Irina.</p></section>
+
+    <section class="section-card ethics-note">
+      <p data-en="The Quiet Guide is not a therapist, and not a substitute for one. It is only a way of finding your way around the garden." data-ru="Тихий проводник — не терапевт и не его замена. Это лишь способ найти дорогу по саду.">The Quiet Guide is not a therapist, and not a substitute for one. It is only a way of finding your way around the garden.</p>
+    </section>
   </main>
 
-  <footer>© 2026 Irina Kot — Reflective Lifestyle Practice</footer>
+  <footer>
+    <div class="gold-line" aria-hidden="true"></div>
+    <span data-en="© 2026 Irina Kot — A quiet place to come back to yourself" data-ru="© 2026 Ирина Кот — Тихое место, чтобы вернуться к себе">© 2026 Irina Kot — A quiet place to come back to yourself</span>
+  </footer>
 </body>
 </html>
